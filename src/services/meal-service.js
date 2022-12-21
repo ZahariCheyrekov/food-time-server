@@ -10,7 +10,7 @@ export const getMeal = (mealId) => {
 }
 
 export const getUserMeals = (userId) => {
-    return Meal.find({ userId });
+    return Meal.find({ ownerId: userId });
 }
 
 export const getUserLikedMeals = (userId) => {
